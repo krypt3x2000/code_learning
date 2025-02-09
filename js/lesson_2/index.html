@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Code Learning n.2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="lesson-container">
+            <div id="instruction-container">
+                <header id="instruction-title">Impara JavaScript</header>
+                <div id="lesson">
+                    <p>Lezione n.2</p>
+                    <p>Matematica</p>
+                </div>
+                <hr>
+                <div id="lesson-body">
+                    <p>In questa lezione, si tratterà di matematica basica in JavaScript. Le operazioni di matematica di base sono: addizioni, sottrazioni, moltiplicazioni e divisioni. Ecco un esempio</p>
+                    <div id="code-example">
+                        <p><span id="console-txt">console</span>.<span id="log-txt">log</span><span id="brackets-txt">(<span id="math-txt">5</span><span id="symbol-txt"> + </span><span id="math-txt">5</span>)</span></p>
+                    </div>
+                    <p>
+                        Le operazioni sono indicate con i seguenti simboli:
+                        <ul>
+                            <li>Addizione: +</li>
+                            <li>Sottrazione: -</li>
+                            <li>Moltiplicazione: *</li>
+                            <li>Divisione: / (da non confondere con \)</li>
+                        </ul>
+                        Ora prova ad eseguire questa operazione: 6 x 8
+                    </p>
+                </div>
+            </div>
+            <div id="code-container">
+                <div id="code-title-container">
+                    <header id="code-title">Code Editor</header>
+                    <img id="menu-goto" src="menu.png" onclick="openMenu()">
+                </div>
+                <hr>
+                <textarea id="code-input" placeholder="Scrivi qui il codice..."></textarea><br>
+                <button id="submit-code" onclick="exeCode()">Esegui Codice</button>
+            </div>
+        </div>
+        <div id="output-container">
+            <p id="output-text">Qui comparirà l'output...</p>
+            <p id="output-code"></p>
+        </div>
+    </div>
+    <div id="menu-container">
+        <header id="menu-title">Menu di pausa</header>
+        <hr>
+        <button id="menu-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/index.html'">Torna alla Home</button>
+    </div>
+    <div id="results-container">
+        <header id="results-title">Lezione Completata!</header>
+        <hr>
+        <p>Hai completato la lezione n.2, complimenti!<br>Ora puoi passare alla prossima lezione.</p>
+        <button id="results-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/lesson_3/index.html'">Prossima Lezione</button>
+        <button id="results-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/index.html'">Torna alla Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

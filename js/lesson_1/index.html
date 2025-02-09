@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Code Learning n.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="lesson-container">
+            <div id="instruction-container">
+                <header id="instruction-title">Impara JavaScript</header>
+                <div id="lesson">
+                    <p>Lezione n.1</p>
+                    <p>Output</p>
+                </div>
+                <hr>
+                <div id="lesson-body">
+                    <p>In questa lezione, impareremo come digitare qualcosa nell'output. L'output è un terminale che mostra ciò che può fare il nostro codice. Ecco un esempio:</p>
+                    <div id="code-example">
+                        <p><span id="console-txt">console</span>.<span id="log-txt">log</span><span id="brackets-txt">(<span id="string-txt">"Hello"</span>)</span></p>
+                    </div>
+                    <p>
+                        Ora prova a scrivere "Hello World".
+                    </p>
+                </div>
+            </div>
+            <div id="code-container">
+                <div id="code-title-container">
+                    <header id="code-title">Code Editor</header>
+                    <img id="menu-goto" src="menu.png" onclick="openMenu()">
+                </div>
+                <hr>
+                <textarea id="code-input" placeholder="Scrivi qui il codice..."></textarea><br>
+                <button id="submit-code" onclick="exeCode()">Esegui Codice</button>
+            </div>
+        </div>
+        <div id="output-container">
+            <p id="output-text">Qui comparirà l'output...</p>
+            <p id="output-code"></p>
+        </div>
+    </div>
+    <div id="menu-container">
+        <header id="menu-title">Menu di pausa</header>
+        <hr>
+        <button id="menu-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/index.html'">Torna alla Home</button>
+    </div>
+    <div id="results-container">
+        <header id="results-title">Lezione Completata!</header>
+        <hr>
+        <p>Hai completato la lezione n.2, complimenti!<br>Ora puoi passare alla prossima lezione.</p>
+        <button id="results-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/lesson_2/index.html'">Prossima Lezione</button>
+        <button id="results-button" onclick="window.location.href = 'D:/development/javascript/code_learning/js/index.html'">Torna alla Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
